@@ -115,5 +115,12 @@ namespace EmployeeMgmt
                 MessageBox.Show(Ex.Message);
             }
         }
+
+        private void EmpLbl_Click(object sender, EventArgs e)
+        {
+            Employees Obj = new Employees();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }
