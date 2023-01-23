@@ -16,5 +16,10 @@ namespace EmployeeMgmt
         {
             InitializeComponent();
         }
+
+        private void Departments_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
