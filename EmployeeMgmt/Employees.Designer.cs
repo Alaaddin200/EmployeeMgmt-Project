@@ -40,13 +40,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -164,14 +164,6 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Join Date";
             // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(54, 766);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(311, 34);
-            this.textBox6.TabIndex = 14;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
@@ -214,8 +206,15 @@
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(54, 656);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(250, 34);
+            this.dateTimePicker1.Size = new System.Drawing.Size(311, 34);
             this.dateTimePicker1.TabIndex = 22;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(54, 776);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(311, 34);
+            this.dateTimePicker2.TabIndex = 23;
             // 
             // Employees
             // 
@@ -223,6 +222,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1388, 980);
+            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -231,7 +231,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -266,12 +265,12 @@
         private Label label7;
         private TextBox textBox5;
         private Label label8;
-        private TextBox textBox6;
         private Panel panel2;
         private PictureBox pictureBox1;
         private ComboBox comboBox1;
         private ComboBox comboBox2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateTimePicker2;
     }
 }
