@@ -47,7 +47,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -238,18 +238,19 @@
             this.pictureBox5.TabIndex = 50;
             this.pictureBox5.TabStop = false;
             // 
-            // button1
+            // DeleteBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(137, 483);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 54);
-            this.button1.TabIndex = 52;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.Color.Crimson;
+            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.DeleteBtn.Location = new System.Drawing.Point(137, 483);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(122, 54);
+            this.DeleteBtn.TabIndex = 52;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // Departments
             // 
@@ -257,7 +258,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1388, 1040);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label6);
@@ -312,6 +313,6 @@
         private PictureBox pictureBox4;
         private Label label7;
         private PictureBox pictureBox5;
-        private Button button1;
+        private Button DeleteBtn;
     }
 }
