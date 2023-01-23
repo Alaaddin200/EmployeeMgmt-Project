@@ -104,9 +104,9 @@
             this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(54, 328);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 28);
+            this.label4.Size = new System.Drawing.Size(167, 28);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Employee Name";
+            this.label4.Text = "Employee Gender";
             // 
             // textBox2
             // 
@@ -123,9 +123,9 @@
             this.label5.ForeColor = System.Drawing.Color.Teal;
             this.label5.Location = new System.Drawing.Point(54, 563);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 28);
+            this.label5.Size = new System.Drawing.Size(122, 28);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Employee Name";
+            this.label5.Text = "Date of Birth";
             // 
             // textBox3
             // 
@@ -142,9 +142,9 @@
             this.label6.ForeColor = System.Drawing.Color.Teal;
             this.label6.Location = new System.Drawing.Point(54, 451);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 28);
+            this.label6.Size = new System.Drawing.Size(208, 28);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Employee Name";
+            this.label6.Text = "Employee Department";
             // 
             // textBox4
             // 
@@ -161,9 +161,9 @@
             this.label7.ForeColor = System.Drawing.Color.Teal;
             this.label7.Location = new System.Drawing.Point(54, 794);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 28);
+            this.label7.Size = new System.Drawing.Size(205, 28);
             this.label7.TabIndex = 17;
-            this.label7.Text = "Employee Name";
+            this.label7.Text = "Employee Daily Salary";
             // 
             // textBox5
             // 
@@ -180,9 +180,9 @@
             this.label8.ForeColor = System.Drawing.Color.Teal;
             this.label8.Location = new System.Drawing.Point(54, 682);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(155, 28);
+            this.label8.Size = new System.Drawing.Size(93, 28);
             this.label8.TabIndex = 15;
-            this.label8.Text = "Employee Name";
+            this.label8.Text = "Join Date";
             // 
             // textBox6
             // 
@@ -196,7 +196,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 880);
+            this.panel2.Location = new System.Drawing.Point(0, 923);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1388, 26);
             this.panel2.TabIndex = 18;
@@ -206,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1388, 906);
+            this.ClientSize = new System.Drawing.Size(1388, 949);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
@@ -226,6 +226,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Employees";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employees";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
