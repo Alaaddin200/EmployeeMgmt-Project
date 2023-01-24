@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salaries));
             this.UpdateBtn = new System.Windows.Forms.Button();
-            this.SalaryTb = new System.Windows.Forms.DateTimePicker();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.AddBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,6 +52,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.AmountTb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -73,15 +73,6 @@
             this.UpdateBtn.TabIndex = 43;
             this.UpdateBtn.Text = "Update";
             this.UpdateBtn.UseVisualStyleBackColor = false;
-            // 
-            // SalaryTb
-            // 
-            this.SalaryTb.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.SalaryTb.CalendarTitleForeColor = System.Drawing.Color.Black;
-            this.SalaryTb.Location = new System.Drawing.Point(54, 656);
-            this.SalaryTb.Name = "SalaryTb";
-            this.SalaryTb.Size = new System.Drawing.Size(311, 34);
-            this.SalaryTb.TabIndex = 40;
             // 
             // AddBtn
             // 
@@ -305,12 +296,21 @@
             this.label10.TabIndex = 52;
             this.label10.Text = "Employee";
             // 
+            // AmountTb
+            // 
+            this.AmountTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AmountTb.Location = new System.Drawing.Point(54, 672);
+            this.AmountTb.Name = "AmountTb";
+            this.AmountTb.Size = new System.Drawing.Size(311, 34);
+            this.AmountTb.TabIndex = 60;
+            // 
             // Salaries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1388, 1040);
+            this.Controls.Add(this.AmountTb);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.SalaryLbl);
@@ -323,7 +323,6 @@
             this.Controls.Add(this.DaysTb);
             this.Controls.Add(this.EmpCb);
             this.Controls.Add(this.UpdateBtn);
-            this.Controls.Add(this.SalaryTb);
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
@@ -355,7 +354,6 @@
         #endregion
 
         private Button UpdateBtn;
-        private DateTimePicker SalaryTb;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Button AddBtn;
         private PictureBox pictureBox1;
@@ -378,5 +376,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private Label label10;
+        private TextBox AmountTb;
     }
 }
