@@ -57,6 +57,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.Delete = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -260,6 +261,7 @@
             this.UpdateBtn.TabIndex = 25;
             this.UpdateBtn.Text = "Update";
             this.UpdateBtn.UseVisualStyleBackColor = false;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // label9
             // 
@@ -345,12 +347,27 @@
             this.label12.TabIndex = 52;
             this.label12.Text = "Employee";
             // 
+            // Delete
+            // 
+            this.Delete.BackColor = System.Drawing.Color.Red;
+            this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Delete.ForeColor = System.Drawing.Color.Black;
+            this.Delete.Location = new System.Drawing.Point(684, 905);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(122, 54);
+            this.Delete.TabIndex = 60;
+            this.Delete.Text = "Delete";
+            this.Delete.UseVisualStyleBackColor = false;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1388, 1040);
+            this.Controls.Add(this.Delete);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label10);
@@ -425,5 +442,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private Label label12;
+        private Button Delete;
     }
 }
