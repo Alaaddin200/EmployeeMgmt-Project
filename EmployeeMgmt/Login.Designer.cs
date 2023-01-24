@@ -32,12 +32,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.UNameTb = new System.Windows.Forms.TextBox();
+            this.PasswordTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.LoginBtn = new System.Windows.Forms.Button();
+            this.ResetLbl = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -73,21 +73,21 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // UNameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(416, 207);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 34);
-            this.textBox1.TabIndex = 3;
+            this.UNameTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UNameTb.Location = new System.Drawing.Point(416, 207);
+            this.UNameTb.Name = "UNameTb";
+            this.UNameTb.Size = new System.Drawing.Size(311, 34);
+            this.UNameTb.TabIndex = 3;
             // 
-            // textBox2
+            // PasswordTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(416, 295);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(311, 34);
-            this.textBox2.TabIndex = 4;
+            this.PasswordTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PasswordTb.Location = new System.Drawing.Point(416, 295);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.Size = new System.Drawing.Size(311, 34);
+            this.PasswordTb.TabIndex = 4;
             // 
             // label2
             // 
@@ -111,28 +111,29 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Password";
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Teal;
-            this.button1.Location = new System.Drawing.Point(492, 380);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 42);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LoginBtn.ForeColor = System.Drawing.Color.Teal;
+            this.LoginBtn.Location = new System.Drawing.Point(492, 380);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(173, 42);
+            this.LoginBtn.TabIndex = 7;
+            this.LoginBtn.Text = "Login";
+            this.LoginBtn.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // ResetLbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Teal;
-            this.label4.Location = new System.Drawing.Point(486, 444);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 28);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Reset";
+            this.ResetLbl.AutoSize = true;
+            this.ResetLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.ResetLbl.ForeColor = System.Drawing.Color.Teal;
+            this.ResetLbl.Location = new System.Drawing.Point(546, 450);
+            this.ResetLbl.Name = "ResetLbl";
+            this.ResetLbl.Size = new System.Drawing.Size(58, 28);
+            this.ResetLbl.TabIndex = 8;
+            this.ResetLbl.Text = "Reset";
+            this.ResetLbl.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox2
             // 
@@ -151,12 +152,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(892, 520);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ResetLbl);
+            this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PasswordTb);
+            this.Controls.Add(this.UNameTb);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -176,12 +177,12 @@
         private Panel panel1;
         private Label label1;
         private PictureBox pictureBox1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox UNameTb;
+        private TextBox PasswordTb;
         private Label label2;
         private Label label3;
-        private Button button1;
-        private Label label4;
+        private Button LoginBtn;
+        private Label ResetLbl;
         private PictureBox pictureBox2;
     }
 }
