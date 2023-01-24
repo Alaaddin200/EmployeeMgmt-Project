@@ -47,7 +47,7 @@
             this.PeriodTb = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.SalaryLbl = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -239,16 +239,17 @@
             this.pictureBox5.TabIndex = 58;
             this.pictureBox5.TabStop = false;
             // 
-            // label8
+            // SalaryLbl
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Teal;
-            this.label8.Location = new System.Drawing.Point(944, 155);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 28);
-            this.label8.TabIndex = 57;
-            this.label8.Text = "Salary";
+            this.SalaryLbl.AutoSize = true;
+            this.SalaryLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SalaryLbl.ForeColor = System.Drawing.Color.Teal;
+            this.SalaryLbl.Location = new System.Drawing.Point(944, 155);
+            this.SalaryLbl.Name = "SalaryLbl";
+            this.SalaryLbl.Size = new System.Drawing.Size(65, 28);
+            this.SalaryLbl.TabIndex = 57;
+            this.SalaryLbl.Text = "Salary";
+            this.SalaryLbl.Click += new System.EventHandler(this.SalaryLbl_Click);
             // 
             // pictureBox4
             // 
@@ -310,7 +311,7 @@
             this.ClientSize = new System.Drawing.Size(1388, 1040);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.SalaryLbl);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox3);
@@ -369,7 +370,7 @@
         private DateTimePicker PeriodTb;
         private Label label7;
         private PictureBox pictureBox5;
-        private Label label8;
+        private Label SalaryLbl;
         private PictureBox pictureBox4;
         private Label label9;
         private PictureBox pictureBox3;

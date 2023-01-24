@@ -38,5 +38,12 @@ namespace EmployeeMgmt
         {
 
         }
+
+        private void SalaryLbl_Click(object sender, EventArgs e)
+        {
+            Salaries Obj = new Salaries();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }
