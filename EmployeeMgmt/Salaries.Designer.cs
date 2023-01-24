@@ -44,7 +44,7 @@
             this.EmpCb = new System.Windows.Forms.ComboBox();
             this.DaysTb = new System.Windows.Forms.TextBox();
             this.PeriodTb = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
+            this.LogoutLbl = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.SalaryLbl = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -211,16 +211,17 @@
             this.PeriodTb.Size = new System.Drawing.Size(311, 34);
             this.PeriodTb.TabIndex = 46;
             // 
-            // label7
+            // LogoutLbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(1159, 155);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 28);
-            this.label7.TabIndex = 59;
-            this.label7.Text = "Logout";
+            this.LogoutLbl.AutoSize = true;
+            this.LogoutLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LogoutLbl.ForeColor = System.Drawing.Color.Teal;
+            this.LogoutLbl.Location = new System.Drawing.Point(1159, 155);
+            this.LogoutLbl.Name = "LogoutLbl";
+            this.LogoutLbl.Size = new System.Drawing.Size(75, 28);
+            this.LogoutLbl.TabIndex = 59;
+            this.LogoutLbl.Text = "Logout";
+            this.LogoutLbl.Click += new System.EventHandler(this.LogoutLbl_Click);
             // 
             // pictureBox5
             // 
@@ -311,7 +312,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1388, 1040);
             this.Controls.Add(this.AmountTb);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.LogoutLbl);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.SalaryLbl);
             this.Controls.Add(this.pictureBox4);
@@ -368,7 +369,7 @@
         private ComboBox EmpCb;
         private TextBox DaysTb;
         private DateTimePicker PeriodTb;
-        private Label label7;
+        private Label LogoutLbl;
         private PictureBox pictureBox5;
         private Label SalaryLbl;
         private PictureBox pictureBox4;
