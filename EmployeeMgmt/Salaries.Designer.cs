@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salaries));
-            this.button2 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.UpdateBtn = new System.Windows.Forms.Button();
+            this.SalaryTb = new System.Windows.Forms.DateTimePicker();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,9 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.EmpCb = new System.Windows.Forms.ComboBox();
+            this.DaysTb = new System.Windows.Forms.TextBox();
+            this.PeriodTb = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -61,40 +61,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // UpdateBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(215, 938);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 54);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.UpdateBtn.BackColor = System.Drawing.Color.Teal;
+            this.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.UpdateBtn.Location = new System.Drawing.Point(215, 938);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(122, 54);
+            this.UpdateBtn.TabIndex = 43;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
+            // SalaryTb
             // 
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Black;
-            this.dateTimePicker1.Location = new System.Drawing.Point(54, 656);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(311, 34);
-            this.dateTimePicker1.TabIndex = 40;
+            this.SalaryTb.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.SalaryTb.CalendarTitleForeColor = System.Drawing.Color.Black;
+            this.SalaryTb.Location = new System.Drawing.Point(54, 656);
+            this.SalaryTb.Name = "SalaryTb";
+            this.SalaryTb.Size = new System.Drawing.Size(311, 34);
+            this.SalaryTb.TabIndex = 40;
             // 
-            // button1
+            // AddBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(54, 938);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 54);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.AddBtn.BackColor = System.Drawing.Color.Teal;
+            this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddBtn.ForeColor = System.Drawing.Color.White;
+            this.AddBtn.Location = new System.Drawing.Point(54, 938);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(122, 54);
+            this.AddBtn.TabIndex = 42;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -190,33 +190,33 @@
             this.panel1.Size = new System.Drawing.Size(1388, 125);
             this.panel1.TabIndex = 26;
             // 
-            // comboBox3
+            // EmpCb
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.EmpCb.FormattingEnabled = true;
+            this.EmpCb.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox3.Location = new System.Drawing.Point(54, 308);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(311, 36);
-            this.comboBox3.TabIndex = 44;
+            this.EmpCb.Location = new System.Drawing.Point(54, 308);
+            this.EmpCb.Name = "EmpCb";
+            this.EmpCb.Size = new System.Drawing.Size(311, 36);
+            this.EmpCb.TabIndex = 44;
             // 
-            // textBox1
+            // DaysTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(54, 427);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 34);
-            this.textBox1.TabIndex = 45;
+            this.DaysTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DaysTb.Location = new System.Drawing.Point(54, 427);
+            this.DaysTb.Name = "DaysTb";
+            this.DaysTb.Size = new System.Drawing.Size(311, 34);
+            this.DaysTb.TabIndex = 45;
             // 
-            // dateTimePicker3
+            // PeriodTb
             // 
-            this.dateTimePicker3.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.dateTimePicker3.CalendarTitleForeColor = System.Drawing.Color.Black;
-            this.dateTimePicker3.Location = new System.Drawing.Point(54, 541);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(311, 34);
-            this.dateTimePicker3.TabIndex = 46;
+            this.PeriodTb.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.PeriodTb.CalendarTitleForeColor = System.Drawing.Color.Black;
+            this.PeriodTb.Location = new System.Drawing.Point(54, 541);
+            this.PeriodTb.Name = "PeriodTb";
+            this.PeriodTb.Size = new System.Drawing.Size(311, 34);
+            this.PeriodTb.TabIndex = 46;
             // 
             // label7
             // 
@@ -316,12 +316,12 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PeriodTb);
+            this.Controls.Add(this.DaysTb);
+            this.Controls.Add(this.EmpCb);
+            this.Controls.Add(this.UpdateBtn);
+            this.Controls.Add(this.SalaryTb);
+            this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label5);
@@ -332,7 +332,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Salaries";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Salaries";
@@ -350,10 +350,10 @@
 
         #endregion
 
-        private Button button2;
-        private DateTimePicker dateTimePicker1;
+        private Button UpdateBtn;
+        private DateTimePicker SalaryTb;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Button button1;
+        private Button AddBtn;
         private PictureBox pictureBox1;
         private Panel panel2;
         private Label label5;
@@ -363,9 +363,9 @@
         private Label label2;
         private Label label1;
         private Panel panel1;
-        private ComboBox comboBox3;
-        private TextBox textBox1;
-        private DateTimePicker dateTimePicker3;
+        private ComboBox EmpCb;
+        private TextBox DaysTb;
+        private DateTimePicker PeriodTb;
         private Label label7;
         private PictureBox pictureBox5;
         private Label label8;
