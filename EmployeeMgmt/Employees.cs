@@ -69,7 +69,32 @@ namespace EmployeeMgmt
 
         private void Delete_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (key == 0) ;
+                {
+                    MessageBox.Show("Missing Data!!!");
+                }
+                else
+                {
+                    
 
+                    string Query = "delete from EmployeeTb1 where EmpId={0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    ShowEmp();
+                    MessageBox.Show("Department Deleted!!");
+                    EmpNameTb.Text = "";
+                    DailySalTb.Text = "";
+                    GenCb.SelectedIndex = -1;
+                    DepCb.SelectedIndex = -1;
+
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)
