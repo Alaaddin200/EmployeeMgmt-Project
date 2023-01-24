@@ -30,12 +30,20 @@ namespace EmployeeMgmt
         }
 
         int DSal = 0;
+        string period = "";
         private void GetSalary()
         {
             string Query = "select EmpSal from EmployeeTb1 where EmpId={0}";
             Query = string.Format(Query,EmpCb.SelectedValue.ToString());
-            DSal = Convert.ToInt32(Con.getData(Query).Columns["EmpSal"].ToString();
-            MessageBox.Show("" + DSal);
+            
+            foreach(DataRow dr in Con.GetDate(Query).Rows)
+            {
+
+                DSal = Convert.ToInt32(dr["EmpSal"].ToString());
+
+            }
+            
+            //MessageBox.Show("" + DSal);
             //EmpCb.DataSource = Con.GetData(Query);
 
         }
@@ -61,6 +69,11 @@ namespace EmployeeMgmt
         private void AddBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void EmpCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetSalary();
         }
     }
 }
